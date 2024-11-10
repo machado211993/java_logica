@@ -75,7 +75,7 @@ public class PeliculaServicio {
     }
 
     public void ordenarPorTituloAlfabetico() {
-        peliculas.sort(Comparator.comparing(Pelicula::getTitulo));
+        peliculas.sort(Comparator.comparing(Pelicula::getTitulo)); // aca ordena la lista
         System.out.println("\nPelículas ordenadas por título alfabéticamente:");
         for (Pelicula p : peliculas) {
             System.out.println(p.getTitulo() + " - Director: " + p.getDirector() + " - Duracion: " + p.getDuracion());
@@ -84,7 +84,7 @@ public class PeliculaServicio {
     }
 
     public void ordenarPorDirectorAlfabetico() {
-        peliculas.sort(Comparator.comparing(Pelicula::getDirector));
+        peliculas.sort(Comparator.comparing(Pelicula::getDirector)); // aca ordena
         System.out.println("\nPelículas ordenadas por director alfabéticamente:");
         for (Pelicula p : peliculas) {
             System.out.println(p.getTitulo() + " - Director: " + p.getDirector() + " - Duracion: " + p.getDuracion());
